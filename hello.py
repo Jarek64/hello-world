@@ -16,6 +16,10 @@ def smarties_getpost():
 def colors():
     return smarties.color
 
+@app.route('/smarties/flavors/', methods=['GET', 'POST'])
+def flavors():
+    return smarties.flavor
+
 @app.route('/smarties/flavors/<flavor_name>', methods=['GET', 'POST'])
 def flavorname(flavor_name):
     if flavor_name not in smarties.flavor:
@@ -39,4 +43,4 @@ def colorname(color_name):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=105)
+    app.run(host='0.0.0.0', port=3000)
