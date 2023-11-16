@@ -1,2 +1,6 @@
 __pycache__
 .vscode
+terraform.tfstate
+terraform.tfstate.backup
+local.yaml
+.terraform
